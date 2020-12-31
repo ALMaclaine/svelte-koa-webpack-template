@@ -1,0 +1,35 @@
+{
+  "name": "svelte-koa-webpack-template",
+  "version": "0.1.0",
+  "description": "A template for a svelte application proxied to a koa server using webpack.",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "node index.js",
+    "start": "concurrently 'npm run start:server' 'cd client; npm run dev;'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALMaclaine/svelte-koa-webpack-template.git"
+  },
+  "keywords": [
+    "koa",
+    "svelte",
+    "degit",
+    "template",
+    "server",
+    "webpack",
+    "proxy"
+  ],
+  "author": "Alessandro Maclaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALMaclaine/svelte-koa-webpack-template/issues"
+  },
+  "homepage": "https://github.com/ALMaclaine/svelte-koa-webpack-template#readme",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "concurrently": "^5.3.0",
+    "koa": "^2.13.0",
+    "koa-server": "^1.2.2"
+  }
+}
