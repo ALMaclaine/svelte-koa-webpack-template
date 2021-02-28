@@ -1,22 +1,21 @@
 <script>
 	import {onMount} from 'svelte';
-
+    import './App.css';
 	let data = {};
 
 	onMount(async () => {
 		const res = await fetch('/api');
 		data = await res.json();
-		console.log(data);
 	});
-
-
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+    $column: 200px;
+
+    .menu {
+        width: calc(4 * $column);
+    }
 </style>
 
-<h1>Hello world!</h1>
+<h1 class="menu bg-gray-100 rounded-xl p-8">Hello world!</h1>
 <div>Data: {JSON.stringify(data)}</div>

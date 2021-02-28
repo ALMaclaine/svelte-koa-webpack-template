@@ -4,7 +4,7 @@ const koaRouter = require('@koa/router')
 const app = new koa()
 const router = new koaRouter()
 
-router.get('/', (ctx) => {
+router.get('/api', (ctx) => {
   ctx.body = {
     data: 'success'
   };
